@@ -1,0 +1,61 @@
+/* Harsh Raj Dubey */
+
+body {  
+    background-color: black;
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
+}
+
+h1 {
+    text-align: center;
+}
+
+#board {
+    margin-left: auto;
+    margin-right: auto;
+    width: 375px;
+    height: 375px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+}
+
+.square {
+    border-radius: 6px;
+    width: 120px;
+    height: 120px;
+    border: 1px solid #D3D3D3;
+    background-color: #1f1f1f;
+    font-size: 40px;
+    display: flex;
+    transition:all 0.1s linear;
+    justify-content: center;
+    align-items: center;
+}
+
+.square:hover {
+    text-shadow: 5px 5px 10px red;
+    background-color: darkgray;
+}
+
+.restartButton {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    height: 40px;
+    width: 150px;
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 40px;
+    transition: all 0.2s linear;
+    font-size: 18px;
+}
+
+#restartButton:hover {
+    box-shadow: 0 0 4px white;
+    transform: scale(1.15);
+    background-color: #000000;
+    color: #FFFFFF;
+}

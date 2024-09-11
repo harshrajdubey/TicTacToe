@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe | Harsh Raj Dubey</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto+Serif&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="title">
+        <h1 style="color:white;">Tic Tac Toe</h1>
+    </div>
+    <div id="board">
+        <div class="square" id="square0"></div>
+        <div class="square" id="square1"></div>
+        <div class="square" id="square2"></div>
+        <div class="square" id="square3"></div>
+        <div class="square" id="square4"></div>
+        <div class="square" id="square5"></div>
+        <div class="square" id="square6"></div>
+        <div class="square" id="square7"></div>
+        <div class="square" id="square8"></div>
+    </div>  
+    <div id="endGame" style="text-align: center;">
+        <input type="button" value="Restart" id="restartButton" class="restartButton" style="display: inline-block;" onclick="restartButton()"/>
+        <input type="button" value="Reset" id="restartButton" class="restartButton" style="display: inline-block;" onclick="resetStorage()"/>
+        <br>
+        <input type="button" value="X Wins " id="❌win" class="restartButton" style="display: inline-block;" onclick="return false;"/>
+        <input type="button" value="Draws " id="draw" class="restartButton" style="display: inline-block;" onclick="return false;"/>
+        <input type="button" value="O Wins " id="⭕win" class="restartButton" style="display: inline-block;" onclick="return false;"/>
+
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
